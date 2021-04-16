@@ -85,3 +85,6 @@ html {
 :target {
   scroll-margin-top: .8em;
 }
+body{
+ justify-content: center;
+}

@@ -1,4 +1,5 @@
 .card {
+  
   /* Add shadows to create the "card" effect */
   box-shadow: 0 14px 18px 0 #00000033;
   transition: 0.3s;
@@ -12,10 +13,13 @@
 
 /* Add some padding inside the card container */
 .container {
+  
   padding: 2px 16px;
 }
 
 .container-projetos{
+  max-width: 100%;
+  justify-content: center;
   display:flex;
   margin-top: 40px;
 }
@@ -29,6 +33,9 @@
   color: rgb(255, 255, 255);
 }
 .container-page{
+  display:flexbox;
+
+  align-items: center;
   background-color: rgb(24, 24, 24);
   justify-content: center;
 
@@ -41,7 +48,7 @@
   color: #ffff;
   font-size: 20px;
 }
-.container-initial .container-icons{
+ .container-icons{
   display: flex;
   float: left;
 }
@@ -52,6 +59,9 @@
   font-size: 25px;
 }
 .container-sobre{
+  max-width: 100%;
+  justify-content: center;
+  text-align: left;
   display: flex;
   color:#ffff;
   background-color: #313131;
@@ -63,7 +73,10 @@
 }
 .conhecimentos{
   display: flex;
-  margin: 50px;
+  max-width: 100%;
+  justify-content: center;
+  justify-items: center;
+
 }
 .item-c{
   width: 200px;

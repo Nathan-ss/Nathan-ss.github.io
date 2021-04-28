@@ -25,12 +25,17 @@
 </head>
 
 <body class="container-page">
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+
   <nav>
     <div class="nav-wrapper blue darken-3">
       <a href="#!" class="brand-logo" style="margin-left: 20px;">
         <h5>Portifolio - <strong> Nathan Soares Silva</strong></h5>
       </a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="menu-mobile" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
       <ul class="right hide-on-med-and-down "
         style="font-size: 60px; margin-right: 30px; font-family:sans-serif; font-weight: 500;">
         <li><a href="#sobre">Sobre mim</a></li>
@@ -245,8 +250,8 @@
   </footer>
       
   <script>
-$(function(){
-     $(".sidenav").sideNav();
+  $(function(){
+     $(".button-collapse").sideNav();
  });
  </script>
 </body>

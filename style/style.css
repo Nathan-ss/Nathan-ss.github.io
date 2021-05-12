@@ -44,17 +44,12 @@
   }
   .container-initial{
     display: flex;
-    
+
     justify-content: center;
     color: #ffff;
     font-size: 20px;
-  }
-  .container-initial .initial-left{
-    display: flexbox;
-
-  }
-  .container-icons{
-    margin-right: 560px;
+    justify-content: center;
+    align-items: center;
   }
 
 

@@ -14,7 +14,7 @@
 
   /* Add some padding inside the card container */
   .container {
-    
+    width: 100%;
     padding: 2px 16px;
   }
 
@@ -34,8 +34,8 @@
     color: rgb(255, 255, 255);
   }
   .container-page{
-    display:flexbox;
-
+    display:flex;
+    flex-direction: column;
     align-items: center;
     background-color: rgb(24, 24, 24);
     justify-content: center;
@@ -60,7 +60,7 @@
     font-size: 25px;
   }
   .container-sobre{
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
     text-align: left;
     display: flex;
@@ -98,10 +98,14 @@
   }
 
 
-  html {
-    scroll-behavior: smooth;
-  }
-  :target {
-    scroll-margin-top: .8em;
-  }
+}
+
+@media screen and (max-width: 767px) {
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: .8em;
 }

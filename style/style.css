@@ -19,7 +19,7 @@
   }
 
   .container-projetos{
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
     display:flex;
     margin-top: 40px;
@@ -74,12 +74,15 @@
   }
   .conhecimentos{
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
     justify-content: center;
     justify-items: center;
+    
 
   }
   .item-c{
+    margin-top: 10px;
     width: 200px;
     background-color: rgb(56, 56, 56);
     box-shadow: 5px 3px 5px #ffffff33;
@@ -100,8 +103,20 @@
 
 }
 
-@media screen and (max-width: 767px) {
-  
+@media screen and (max-width: 600px) {
+  .container-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-initial{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 html {
   scroll-behavior: smooth;

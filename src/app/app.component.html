@@ -1,0 +1,165 @@
+<mat-drawer-container class="container-sidenav" autosize>
+  <span class="container-page">
+  
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <!-- itens da drawer -->
+    <div>
+        <a href="">Sobre</a> <br>
+        <a href="">Projetos</a><br>
+        <a href="">Conhecimentos</a>
+      </div>
+  </mat-drawer>
+
+  <mat-toolbar class="header">
+    <div class="sidenav-content-mobile">
+        <a mat-button (click)="drawer.toggle()">
+            <i class="fas fa-ellipsis-h fa-3x"></i>
+        </a>
+        <h1>NathaN_Soares</h1>
+      </div>
+      <div class="sidenav-content">
+        <a>
+            <i class="fas fa-ellipsis-h fa-3x"></i>
+        </a>
+        <h1>NathaN_Soares</h1>
+        <div class="links">
+          <a href="">Conhecimentos</a>
+          <a href="">Projetos</a>
+          <a href="">Sobre</a>
+        </div>
+      </div>
+
+  </mat-toolbar>
+  <div class="container-content">
+    <div class="container-title">
+      <h1 id="title">NATHAN_SOARES<strong>_</strong></h1>
+      <div class="block-line1"></div>
+      <div class="block-line2"></div>
+      <div class="block-line3"></div>
+      <p class="subtitle">Desenvolvedor <strong>FullStack</strong> e <strong>UX/UI Designer_</strong></p>
+      <div class="container-circle">
+        <div class="circle"><a href=""><i class="fab fa-github-alt fa-2x"></i></a></div>
+        <div class="circle"><a href=""><i class="fab fa-linkedin-in fa-2x"></i></a></div>
+        <div class="circle"><a href=""><i class="fab fa-whatsapp fa-2x"></i></a></div>
+      </div>
+    </div>
+    
+    <div class="container-about">
+
+      <h1 class="title-base"> <strong><</strong>Sobre mim<strong>/></strong> </h1>
+      <p>Meu nome é Nathan, moro no Brasil, em Santo André, São Paulo. <br>
+        Sou um estudante de Engenharia da Computação, <br>
+        na Universidade Metodista de São Paulo. <br> <br>
+        Eu estou sempre em aprendizado, <br>
+        gosto muito de estudar sobre novas tecnologias,<br> 
+        a minha paixão por codar surgiu na faculdade quando me<br> 
+        foi apresentado o Python, <br>
+        mas eu fui evoluir mesmo quando eu conheci o PHP e o JavaScript,<br> 
+        ai eu não parei mais de estudar.</p>
+      <button class="btn-abt"><i class="fas fa-cloud-download-alt" style="margin-right: 10px;"></i>currículo</button>
+    </div>
+    
+    <div class="container-projects">
+      <h1 class="title-base"> <strong><</strong>Projetos<strong>/></strong> </h1>
+      <div class="project-itens">
+        <div class="pj">
+          <img src="../assets/images/bracktR.png" alt="">
+          <mat-card class="card">
+            <h1 class="title-base"> <strong><</strong>AVA-ForBrain<strong>/></strong> </h1>
+            <p>Esse projeto é a criação de um software destinado á educação.</p>
+            <p>ferramentas:
+              <a href="" placement="bottom" ngbTooltip="Angular"><i class="fab fa-angular fa-2x" style=" color: #e41a1a;"></i></a>
+              <a href="" placement="bottom" ngbTooltip="TypeScript"><i class="iconify" data-icon="simple-icons:typescript" data-inline="true" style="font-size: 25px; margin-right: 5px; color: #0076c6;"></i></a>
+              <a href="" placement="bottom" ngbTooltip="Html5"><i class="fab fa-html5 fa-2x" style=" color: #db7c23;"></i></a>
+              <a href="" placement="bottom" ngbTooltip="CSS3"><i class="fab fa-css3-alt fa-2x" style=" color: #2392db;"></i></a>
+            </p>
+            <p class="btn-rp">
+              <a href="https://github.com/Nathan-ss/AVA-ForBrain" placement="bottom" triggers="mouseenter:mouseleave" ngbPopover="GitHub-repositório "><i class="fab fa-github fa-3x"></i></a>
+              <button type="button" class="btn-pg" ngbPopover="What a great tip!" triggers="mouseenter:mouseleave" ngbPopover="GitHub-page">
+                pagina
+              </button>
+            </p>
+          </mat-card>
+          <img src="../assets/images/bracktL.png" alt="">
+        </div>
+
+        <div class="pj">
+          <img src="../assets/images/bracktR.png" alt="">
+          <mat-card class="card">
+            <h1 class="title-base"> <strong><</strong>aplicativo Tecnomed<strong>/></strong> </h1>
+            <p>Esse projeto é a criação de um aplicativo destinado á saúde.</p>
+            <p>ferramentas:
+              <a href="" placement="bottom" ngbTooltip="React-Native"><i class="fab fa-react fa-2x" style="color: #01b7ff;"></i></a>
+              <a href="" placement="bottom" ngbTooltip="JavaScript"><i class="fab fa-js fa-2x" style="color: #ffd901;"></i></a>
+            </p>
+            <p class="btn-rp">
+              <a href="https://github.com/Nathan-ss/appfacu" placement="bottom" triggers="mouseenter:mouseleave" ngbPopover="GitHub-repositório "><i class="fab fa-github fa-3x"></i></a>
+              <button type="button" class="btn-pg" ngbPopover="What a great tip!" triggers="mouseenter:mouseleave" ngbPopover="GitHub-page">
+                pagina
+              </button>
+            </p>
+          </mat-card>
+          <img src="../assets/images/bracktL.png" alt="">
+        </div>
+        
+        <div class="pj">
+          <img src="../assets/images/bracktR.png" alt="">
+          <mat-card class="card">
+            <h1 class="title-base"> <strong><</strong>Dashboard e Login<strong>/></strong> </h1>
+            <p>Esse projeto é a criação de um dashboard e uma tela de login.</p>
+            <p>ferramentas:
+              <a href="" placement="bottom" ngbTooltip="JavaScript"><i class="fab fa-js fa-2x" style="color: #ffd901;"></i></a>
+              <a href="" placement="bottom" ngbTooltip="Html5"><i class="fab fa-html5 fa-2x" style=" color: #db7c23;"></i></a>
+              <a href="" placement="bottom" ngbTooltip="CSS3"><i class="fab fa-css3-alt fa-2x" style=" color: #2392db;"></i></a>
+            </p>
+            <p class="btn-rp">
+              <a href="https://github.com/Nathan-ss/Dashboard" placement="bottom" triggers="mouseenter:mouseleave" ngbPopover="GitHub-repositório "><i class="fab fa-github fa-3x"></i></a>
+              <button type="button" class="btn-pg" ngbPopover="What a great tip!" triggers="mouseenter:mouseleave" ngbPopover="GitHub-page">
+                pagina
+              </button>
+            </p>
+          </mat-card>
+          <img src="../assets/images/bracktL.png" alt="">
+        </div>
+
+        <div class="pj">
+          <img src="../assets/images/bracktR.png" alt="">
+          <mat-card class="card">
+            <h1><strong>futuramente...!</strong></h1>
+          </mat-card>
+          <img src="../assets/images/bracktL.png" alt="">
+        </div>
+        <div class="pj">
+          <img src="../assets/images/bracktR.png" alt="">
+          <mat-card class="card">
+            <h1><strong>futuramente...!</strong></h1>
+          </mat-card>
+          <img src="../assets/images/bracktL.png" alt="">
+        </div>
+        <div class="pj">
+          <img src="../assets/images/bracktR.png" alt="">
+          <mat-card class="card">
+            <h1><strong>futuramente...!</strong></h1>
+          </mat-card>
+          <img src="../assets/images/bracktL.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="blue-mobile"></div>
+  
+
+</span>
+
+<span class="background"> 
+  <img src="../assets/images/fundo_c_img.jpg" alt="">
+</span>
+<span class="background-mobile"> 
+  <img src="../assets/images/fundo.jpg" alt="">
+</span>
+<footer class="footer">
+  <div class="base"></div>
+</footer>
+</mat-drawer-container>

@@ -186,9 +186,6 @@ body,p,h1,h6{
         color: #ffff;
         line-height: 25px;
     }
-    .blue-mobile{
-        display: none;
-    }
     .btn-abt {
         -webkit-border-radius: 10;
         -moz-border-radius: 10;
@@ -455,14 +452,6 @@ body,p,h1,h6{
         left: 0;
         right: 0;
     }
-    .blue-mobile{
-        display: flex;
-        margin-top: 40px;
-        width: 100%;
-        height: 100px;
-        background-color: #1092dd;
-        border-radius: 20px 20px;
-    }
     .container-about h1{
         margin-top: 30px;
         width: 100%;
@@ -502,5 +491,88 @@ body,p,h1,h6{
         background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
         text-decoration: none;
       }
+
+            //projetos
+      // ------------------------------------------------------------------------------------
+      .container-projects{
+          margin-top: 250px;
+          display: flex;
+          flex-direction: column;
+
+      }
+      .project-itens{
+          margin-top: 60px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+      }
+      .project-itens img{
+          max-width: 80px;
+          max-height: 80px;
+          margin: 0px 0px 5px;
+      }
+      .pj {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .card{
+          margin-top: 20px;
+          width: 370px;
+          height: 240px;
+          background-color:#6e6e6e;
+          box-shadow: 0px 10px 20px 0px black ;
+          margin: 5px;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+      }
+      .card h1{
+          font-size: 20px;
+      }
+      .card h6{
+        font-size: 20px;
+    }
+      .card i{
+        margin: 5px;
+    }
+    .btn-rp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-rp i{
+        color: #1da3fa;
+
+    }
+    .btn-rp i:hover{
+        color: #e5d921;
+    }
+    
+    .btn-pg {
+        -webkit-border-radius: 10;
+        -moz-border-radius: 10;
+        border-radius: 30px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 15px;
+        background: #1da3fa;
+        width: 30%;
+        border: 0px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        margin-left: 30px;
+        font-family: code;
+        justify-content: center;
+        align-items: center;
+    }
+      
+      .btn-pg:hover {
+        background: #e5d921;
+        text-decoration: none;
+    }
 
   }

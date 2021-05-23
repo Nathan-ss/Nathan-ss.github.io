@@ -1,4 +1,12 @@
 import { Component } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +16,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'portifolio';
   showFiller = false;
+
+  itenSkill = "HTML5";
+  progressStatus = "MASTER!";
+  iconName = 'fab fa-html5 fa-1x';
+  
+  
 }

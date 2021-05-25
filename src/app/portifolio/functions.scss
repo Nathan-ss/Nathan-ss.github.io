@@ -1,0 +1,40 @@
+$html-color : #e46008 ;
+$css-color:#1145b4;
+$bts-color: #7200be;
+$angular-color: #bb0d0d;
+$react-color: #3e75ee;
+$js-color: #f3de1e;
+$node-color: #059100;
+$git-color: #06ffd5;
+$php-color: #7a2be2;
+
+@mixin iconsColors {
+    .block-itens:hover #html{
+        color: #e46008;
+    }
+    .block-itens:hover #css{
+        color: #1145b4;
+    }
+    .block-itens:hover #bts{
+        color: #7200be;
+    }
+    .block-itens:hover #angular{
+        color: #bb0d0d;
+    }
+    .block-itens:hover #react{
+        color: #3e75ee;
+    }
+    .block-itens:hover #js{
+        color: #f3de1e;
+    }
+    .block-itens:hover #node{
+        color: #059100;
+    }
+
+    .block-itens:hover #git{
+        color: #06ffd5;
+    }
+    .block-itens:hover #php{
+        color: #7a2be2;
+    }
+}

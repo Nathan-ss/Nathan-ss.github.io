@@ -10,12 +10,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { NgSelectModule } from '@ng-select/ng-select';
 import {MatCardModule} from '@angular/material/card';
+import { PortifolioComponent } from './portifolio/portifolio.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PortifolioComponent,
 
   ],
   imports: [

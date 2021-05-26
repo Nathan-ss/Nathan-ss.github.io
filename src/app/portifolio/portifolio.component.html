@@ -32,7 +32,7 @@
     </mat-toolbar>
     <div class="container-content">
       <div class="container-title">
-        <h1 id="title">NATHAN_SOARES<strong>_</strong></h1>
+        <h1 id="title">NATHAN_SOARES<strong style="animation: blink 1s infinite alternate;">_</strong></h1>
         <div class="block-line1"></div>
         <div class="block-line2"></div>
         <div class="block-line3"></div>
@@ -125,21 +125,21 @@
           <div class="pj">
             <img src="../assets/images/bracktR.png" alt="">
             <mat-card class="card">
-              <h1><strong>futuramente...!</strong></h1>
+              <h1><strong>Em breve... Aguarde!</strong></h1>
             </mat-card>
             <img src="../assets/images/bracktL.png" alt="">
           </div>
           <div class="pj">
             <img src="../assets/images/bracktR.png" alt="">
             <mat-card class="card">
-              <h1><strong>futuramente...!</strong></h1>
+              <h1><strong>Em breve... Aguarde!</strong></h1>
             </mat-card>
             <img src="../assets/images/bracktL.png" alt="">
           </div>
           <div class="pj">
             <img src="../assets/images/bracktR.png" alt="">
             <mat-card class="card">
-              <h1><strong>futuramente...!</strong></h1>
+              <h1><strong>Em breve... Aguarde!</strong></h1>
             </mat-card>
             <img src="../assets/images/bracktL.png" alt="">
           </div>
@@ -151,7 +151,12 @@
         <div class="content-skills">
           <div class="column-skills">
             <div class="container-div">
-              <h1 class="title-base">{{itenSkill}} <i id="i" class="{{iconName}}" data-icon="" style=" color: #ffffff;"></i></h1>
+              <h1 class="title-base">
+                {{itenSkill}}
+                <i class="{{iconName}}" style=" color: #ffffff;"></i>
+                
+
+              </h1>
               <p style="color: #ffffff; font-size: 17px; margin-top: 5px; margin: 10px;">{{note}}</p>
             </div>
             <div class="container-div">
@@ -164,17 +169,17 @@
             </div>
           </div>
           <div class="column-skills-itens">
-            <a (click)="ichange('html5','MASTER','fab fa-html5')"><div class="block-itens"><i id="html" class="fab fa-html5 fa-7x"></i></div></a>
+            <a (click)="ichange('html5','MASTER','fab fa-html5')"><div class="block-itens" ><i id="html" class="fab fa-html5 fa-7x"></i></div></a>
             <a (click)="ichange('css3','MASTER','fab fa-css3-alt');"><div class="block-itens"><i id="css" class="fab fa-css3-alt fa-7x"></i></div></a>
             <a (click)="ichange('bootstrap','MASTER','fab fa-bootstrap');"><div class="block-itens"><i id="bts" class="fab fa-bootstrap fa-7x"></i></div></a>
             <a (click)="ichange('angular','MASTER','fab fa-angular');"><div class="block-itens"><i id="angular" class="fab fa-angular fa-7x"></i></div></a>
             <a (click)="ichange('react-native','MASTER','fab fa-react');"><div class="block-itens"><i id="react" class="fab fa-react fa-7x"></i></div></a>
             <a (click)="ichange('javascript','MASTER','fab fa-js-square');"><div class="block-itens"><i id="js" class="fab fa-js-square fa-7x"></i></div></a>
-            <a (click)="ichange('typescript','MASTER','fab fa-css3-alt');"><div class="block-itens"><i id="ts" class="iconify" data-icon="simple-icons:typescript" data-inline="true" style=" margin-right: 5px;"></i></div></a>
+            <a (click)="ichange('typescript','MASTER','iconify icon:simple-icons:typescript icon-inline:true');"><div class="block-itens"><i id="ts" class="iconify" data-icon="simple-icons:typescript" data-inline="true" style=" margin-right: 5px;"></i></div></a>
             <a (click)="ichange('php','MASTER','fab fa-php');"><div class="block-itens"><i id="php" class="fab fa-php fa-7x"></i></div></a>
             <a (click)="ichange('nodejs','MASTER','fab fa-node-js');"><div class="block-itens"><i id="node" class="fab fa-node-js fa-7x"></i></div></a>
-            <a (click)="ichange('adobe','MASTER','fab fa-css3-alt');"><div class="block-itens"><i id="adobe" class="iconify" data-icon="cib:adobe"  data-inline="true" style=" margin-right: 5px;"></i></div></a>
-            <a (click)="ichange('mysql','MASTER','fab fa-css3-alt');"><div class="block-itens"><i id="sql" class="iconify" data-icon="cib:mysql"  data-inline="true" style=" margin-right: 5px; "></i></div></a>
+            <a (click)="ichange('adobe','MASTER','iconify icon:simple-icons:adobe icon-inline:true');"><div class="block-itens"><i id="adobe" class="iconify" data-icon="cib:adobe"  data-inline="true" style=" margin-right: 5px;"></i></div></a>
+            <a (click)="ichange('mysql','MASTER','iconify icon:simple-icons:mysql icon-inline:true');"><div class="block-itens"><i id="sql" class="iconify" data-icon="cib:mysql"  data-inline="true" style=" margin-right: 5px; "></i></div></a>
             <a (click)="ichange('github','MASTER','fab fa-github-square');"><div class="block-itens"><i id="git" class="fab fa-github-square fa-7x"></i></div></a>
           </div>
         </div>

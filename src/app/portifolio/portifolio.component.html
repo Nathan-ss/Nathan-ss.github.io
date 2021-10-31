@@ -1,16 +1,18 @@
-<mat-drawer-container class="container-sidenav" autosize>
-    <span class="container-page">
-    
-    <mat-drawer #drawer class="sidenav" mode="over">
-      <!-- itens da drawer -->
-      <div>
-          <a href="">Sobre</a> <br>
-          <a href="">Projetos</a><br>
-          <a href="">Conhecimentos</a>
-        </div>
-    </mat-drawer>
+<body>
+
+<mat-drawer-container class="container-sidenav"  autosize>
   
-    <mat-toolbar class="header">
+  <mat-drawer #drawer class="sidenav" mode="over">
+    <!-- itens da drawer -->
+    <div >
+      <a href="#sobre" (click)="drawer.toggle()">Sobre</a> <br>
+      <a href="#projetos" (click)="drawer.toggle()">Projetos</a><br>
+      <a href="#conhecimentos" (click)="drawer.toggle()">Conhecimentos</a>
+    </div>
+  </mat-drawer>
+  <span class="container-page" >
+  
+    <mat-toolbar class="header" >
       <div class="sidenav-content-mobile">
           <a mat-button (click)="drawer.toggle()">
               <i class="fas fa-ellipsis-h fa-3x"></i>
@@ -23,28 +25,28 @@
           </a>
           <h1>NathaN_Soares</h1>
           <div class="links">
-            <a href="">Conhecimentos</a>
-            <a href="">Projetos</a>
-            <a href="">Sobre</a>
+            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
           </div>
         </div>
   
     </mat-toolbar>
-    <div class="container-content">
-      <div class="container-title">
+    <div class="container-content" >
+      <div id="initial" class="container-title" data-anime="top" [class.divMove] = "move">
         <h1 id="title">NATHAN_SOARES<strong style="animation: blink 1s infinite alternate;">_</strong></h1>
         <div class="block-line1"></div>
         <div class="block-line2"></div>
         <div class="block-line3"></div>
         <p class="subtitle">Desenvolvedor <strong>FullStack</strong> e <strong>UX/UI Designer_</strong></p>
         <div class="container-circle">
-          <div class="circle"><a href=""><i class="fab fa-github-alt fa-2x"></i></a></div>
-          <div class="circle"><a href=""><i class="fab fa-linkedin-in fa-2x"></i></a></div>
-          <div class="circle"><a href=""><i class="fab fa-whatsapp fa-2x"></i></a></div>
+          <div class="circle"><a href="https://github.com/Nathan-ss"><i class="fab fa-github-alt fa-2x"></i></a></div>
+          <div class="circle"><a href="https://www.linkedin.com/in/nathan-soares-302065186/"><i class="fab fa-linkedin-in fa-2x"></i></a></div>
+          <div class="circle"><a href="https://api.whatsapp.com/send?phone=5511977919985"><i class="fab fa-whatsapp fa-2x"></i></a></div>
         </div>
       </div>
       
-      <div class="container-about">
+      <div id="sobre" class="container-about" data-anime="left" [class.divMove] = "move2">
   
         <h1 class="title-base"> <strong><</strong>Sobre mim<strong>/></strong> </h1>
         <p>Meu nome é Nathan, moro no Brasil, em Santo André, São Paulo. <br>
@@ -56,10 +58,10 @@
           foi apresentado o Python, <br>
           mas eu fui evoluir mesmo quando eu conheci o PHP e o JavaScript,<br> 
           ai eu não parei mais de estudar.</p>
-        <button class="btn-abt"><i class="fas fa-cloud-download-alt" style="margin-right: 10px;"></i>currículo</button>
+        <a class="btn-abt" href="assets/all/curriculo-nathan.pdf"><i class="fas fa-cloud-download-alt" style="margin-right: 10px; color: white;"></i>currículo</a>
       </div>
       
-      <div class="container-projects">
+      <div id="projetos" class="container-projects" data-anime="bottom" [class.divMove] = "move3">
         <h1 class="title-base"> <strong><</strong>Projetos<strong>/></strong> </h1>
         <div class="project-itens">
           <div class="pj">
@@ -114,7 +116,7 @@
               </p>
               <p class="btn-rp">
                 <a href="https://github.com/Nathan-ss/Dashboard" placement="bottom" triggers="mouseenter:mouseleave" ngbPopover="GitHub-repositório "><i class="fab fa-github fa-3x"></i></a>
-                <button type="button" class="btn-pg" ngbPopover="What a great tip!" triggers="mouseenter:mouseleave" ngbPopover="GitHub-page">
+                <button type="button" class="btn-pg" ngbPopover="What a great tip!" triggers="mouseenter:mouseleave" ngbPopover="GitHub-page" onclick="location.href = 'https://nathan-ss.github.io/Dashboard/' " >
                   pagina
                 </button>
               </p>
@@ -146,7 +148,7 @@
         </div>
       </div>
       
-      <div class="container-skills">
+      <div id="conhecimentos" class="container-skills" data-anime="bottom" [class.divMove] = "move4">
         <h1 class="title-base"> <strong><</strong>Conhecimentos<strong>/></strong></h1>
         <div class="content-skills">
           <div class="column-skills">
@@ -186,7 +188,7 @@
       </div>
     </div>
   
-    
+
   
   </span>
   
@@ -196,8 +198,32 @@
   <span class="background-mobile"> 
     <img src="../assets/images/fundo.jpg" alt="">
   </span>
+
   <footer class="footer">
-    <div class="base"></div>
+    <div class="ft-content">
+      <h1>Criado por <strong style="color: #005c99; margin: 15px;"> NATHAN SOARES SILVA</strong></h1>
+      <a href="mailto:nathan.fnss@gmail.com"><h1><i class="fas fa-envelope"></i> <strong>nathan.fnss@gmail.com</strong></h1></a>
+    </div>
+    <div class="base">
+
+      <h1 style="color: #ff4444;">©CopyRight</h1>
+      
+      <div class="base-icon">
+        <a href="https://github.com/Nathan-ss">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5511977919985">
+          <i class="fab fa-whatsapp-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nathan-soares-302065186/">
+          <i class="fab fa-linkedin-square"></i>
+        </a>
+        <a href="mailto:nathan.fnss@gmail.com">
+          <i class="fas fa-envelope-square"></i>
+        </a>
+      </div>
+    </div>
   </footer>
-  <script src="script.js"></script>
   </mat-drawer-container>
+    
+</body>

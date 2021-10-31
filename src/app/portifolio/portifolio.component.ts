@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import {
   trigger,
   state,
@@ -8,6 +8,7 @@ import {
   keyframes,
   // ...
 } from '@angular/animations';
+
 
 @Component({
   selector: 'app-portifolio',
@@ -114,7 +115,7 @@ export class PortifolioComponent implements OnInit {
   progressStatus = "MASTER!";
   iconName = 'fab fa-html5';
 
-
+ 
   note = "html ou Linguagem de Marcação de Hipertexto é uma linguagem de marcação utilizada na construção de páginas na Web.";
   stateProgress = 'html';
   
@@ -125,12 +126,58 @@ export class PortifolioComponent implements OnInit {
 
   ngOnInit(): void {
 
-  }
-  // toggle(){
 
+  }
+  move = false;
+  move2 = false;
+  move3 = false;
+  move4 = false;
+  @HostListener("document:scroll")
+  scrollfunction(){
+
+    if (document.documentElement.scrollTop < 400) {
+      if(document.documentElement.scrollTop > 0){
+        
+        this.move = true;
+        
+      }
+    }
+    else{
+      this.move = false
+    }
     
-  //   this.stateProgress = 'inactive';
-  // }
+    if (document.documentElement.scrollTop < 1100) {
+      
+      if(document.documentElement.scrollTop > 400){
+        this.move2 = true;
+      }
+    }
+    else{
+      this.move2 = false
+    }
+
+    if (document.documentElement.scrollTop < 2100) {
+      
+      if(document.documentElement.scrollTop > 1200){
+        this.move3 = true;
+      }
+    }
+    else{
+      this.move3 = false
+    }
+
+    if (document.documentElement.scrollTop < 3200) {
+      
+      if(document.documentElement.scrollTop > 2100){
+        this.move4 = true;
+      }
+    }
+    else{
+      this.move4 = false
+    }
+
+    }
+
 
   ichange (name:string,level:string,icon:string){
     this.iconName = icon;
